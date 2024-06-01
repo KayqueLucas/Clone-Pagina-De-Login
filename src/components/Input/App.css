@@ -1,0 +1,14 @@
+input{
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+p{
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
