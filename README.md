@@ -33,13 +33,13 @@ node -v
 1. Clone este repositório para a sua máquina local:
 
 ```sh
-git clone https://github.com/seu-usuario/clone-pagina-login.git
+git clone https://github.com/KayqueLucas/Clone-Pagina-De-Login
 ```
 
 2. Navegue até o diretório do projeto:
 
 ```sh
-cd clone-pagina-login
+cd Clone-Pagina-De-Login
 ```
 
 3. Instale as dependências do projeto:
