@@ -7,7 +7,6 @@ export const Icone = () => {
         <img src="/ico/iconGithub.svg" alt="" />
             </a>
             <h1>Sign in to GitHub</h1>
-        </>
-      
+        </>      
     )
 }
