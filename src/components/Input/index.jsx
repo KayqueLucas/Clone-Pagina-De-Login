@@ -1,11 +1,12 @@
 /* eslint-disable react/prop-types */
 
 
-export const Input = ({ title, value, ...rest }) => {
+// eslint-disable-next-line no-unused-vars
+export const Input = ({ title, ...rest }) => {
     return (
-        <>
-            <p>{title}</p>
+        <div>
+            <label>{title}</label>
             <input {...rest} />
-        </>
+        </div>
     )
 }
