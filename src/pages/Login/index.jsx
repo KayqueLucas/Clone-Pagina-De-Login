@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import { Input } from "../../components/Input";
@@ -5,18 +6,27 @@ import "./index.css";
 import { Icone } from "./../../components/cabeçalho/index";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [logar, setLogar] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  function addCount() {
-    setCount((count) => count + 1);
+  const emailSalvo = 'email@email.com'
+  const senhaSalva = '12345'
+
+
+  function clickButton() {
+    setLogar(!logar);
   }
   useEffect(() => {
-    if (count > 0) {
-      alert("Logado com sucesso!");
+    if (logar) {
+      setLogar(false)
+      if (email == emailSalvo && password == senhaSalva) {
+        alert('Logado com Sucesso')
+      } else {
+        alert('Email ou senha incorretos')
+      }
     }
-  }, [count]);
+  }, [logar]);
 
   return (
     <div className="login-container">
@@ -25,18 +35,21 @@ function App() {
       </div>
       <div className="form-group">
         <Input
+          type = "email"
           className="textoPagina"
-          onChang={(e) => setEmail(e.target.value)}
-          title={"Username or email address"}
+          title={"Username or email address"} 
+          onChang={(e) => setEmail(e.target.value)} 
+          value={email}
         />
 
         <Input
           type="password"
           className="textoPagina"
+          title={"Password"} 
           onChang={(e) => setPassword(e.target.value)}
-          title={"Password"}
+          value={password}
         />
-        <button onClick={addCount}>Sign in</button>
+        <button onClick={clickButton}>Sign in</button>
       </div>
     </div>
   );

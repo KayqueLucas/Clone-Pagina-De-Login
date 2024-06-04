@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 
-export const Input = ({ title, ...rest }) => {
+export const Input = ({ title, value, ...rest }) => {
     return (
         <>
             <p>{title}</p>
