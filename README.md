@@ -58,35 +58,10 @@ npm run dev
 
 Abra o navegador e acesse `http://localhost:5173` para ver a página de login.
 
-## Estrutura do Projeto
+## Inspiração
 
-```
-clone-pagina-login/
-├── public/
-│   ├── favicon.ico
-│   └── index.html
-├── src/
-│   ├── components/
-│   │   └── LoginForm.jsx
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── styles/
-│       └── main.css
-├── .gitignore
-├── package.json
-├── README.md
-└── vite.config.js
-```
+![image](https://github.com/KayqueLucas/Clone-Pagina-De-Login/assets/112138080/dd0cc333-d8b1-4d1d-a16e-12855e5bed98)
 
-- **public/**: Contém arquivos estáticos, incluindo o `index.html`.
-- **src/**: Contém o código-fonte do projeto.
-  - **components/**: Contém componentes React, como o formulário de login.
-  - **styles/**: Contém arquivos CSS.
-  - **App.jsx**: Componente principal do aplicativo.
-  - **main.jsx**: Ponto de entrada do React.
-- **.gitignore**: Arquivos e diretórios ignorados pelo Git.
-- **package.json**: Gerencia dependências e scripts do projeto.
-- **vite.config.js**: Configuração do Vite.
 
 ## Customização
 
